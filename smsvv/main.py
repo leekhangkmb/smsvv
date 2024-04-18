@@ -142,12 +142,12 @@ def lqm_sms(message):
     # Gửi thông báo vào nhóm
     bot.send_message(
         GROUP_ID,
-        f'🔰👮Người dùng @{message.from_user.username} đã thực hiện lệnh /spam \n🔰Số điện thoại {phone_number} \n❌Lặp lại {lap} lần.'
+        f'🔰👮Người dùng @{message.from_user.username} đã thực hiện lệnh /spam \n🔰Số điện thoại {phone_number}.'
     )
 
     bot.reply_to(
         message,
-        f'┏━━━━━━━━━━━━━━┓\n┃   Spam Thành Công!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @{username} \n┣➤ Số Tấn Công: {phone_number} \n┣➤ Group: t.me/+1CsguhMAhl8yMGRl \n┗━━━━━━━━━━━━━━➤'
+        f'┏━━━━━━━━━━━━━━┓\n┃   Spam Thành Công!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @{username} \n┣➤ Số Tấn Công: {phone_number} \n┣➤ Group:no no \n┗━━━━━━━━━━━━━━➤'
     )
 
 
