@@ -20,7 +20,7 @@ allowed_group_id = -1002042041196
 allowed_users = [6670870530]
 processes = []
 ADMIN_ID = 6670870530
-
+GROUP_ID = '-1002042041196'
 connection = sqlite3.connect('user_data.db')
 cursor = connection.cursor()
 
@@ -138,6 +138,19 @@ def lqm_sms(message):
     process = subprocess.Popen(["python", file_path, phone_number, "120"])
     processes.append(process)
     bot.reply_to(message, f'🚀 Gửi Yêu Cầu Tấn Công Thành Công 🚀 ')
+
+    # Gửi thông báo vào nhóm
+    bot.send_message(
+        GROUP_ID,
+        f'🔰👮Người dùng @{message.from_user.username} đã thực hiện lệnh /spam \n🔰Số điện thoại {phone_number} \n❌Lặp lại {lap} lần.'
+    )
+
+    bot.reply_to(
+        message,
+        f'┏━━━━━━━━━━━━━━┓\n┃   Spam Thành Công!!!\n┗━━━━━━━━━━━━━━➤\n┏━━━━━━━━━━━━━━┓\n┣➤ Attack By: @{username} \n┣➤ Số Tấn Công: {phone_number} \n┣➤ Group: t.me/+1CsguhMAhl8yMGRl \n┗━━━━━━━━━━━━━━➤'
+    )
+
+
 
 @bot.message_handler(commands=['how'])
 def how_to(message):
