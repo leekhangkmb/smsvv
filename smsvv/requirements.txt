@@ -3,3 +3,5 @@ datetime
 requests
 flask
 psutil
+bs4
+lequangminh
