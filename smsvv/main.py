@@ -12,14 +12,14 @@ import hashlib
 import requests
 import datetime
 
-bot_token = '7018193073:AAFvdUsIJNPi3uym0nyRod40NZMabt6aGyA' 
+bot_token = '6624218714:AAETKqRPxrtOTeq2JZalgEMiOamdXVjeENk' 
 bot = telebot.TeleBot(bot_token)
 
-allowed_group_id = -1002042041196
+allowed_group_id = -1001988961300
 
-allowed_users = [6670870530]
+allowed_users = []
 processes = []
-ADMIN_ID = 6670870530
+ADMIN_ID = 5047988352
 
 connection = sqlite3.connect('user_data.db')
 cursor = connection.cursor()
