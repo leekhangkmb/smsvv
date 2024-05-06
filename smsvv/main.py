@@ -15,7 +15,7 @@ import datetime
 bot_token = '6510317016:AAHjyf0aHeR2qN0CzujTZI4NxKX8Fdc50dw' 
 bot = telebot.TeleBot(bot_token)
 
-allowed_group_id = -1002042041196
+allowed_group_id = -1001988961300
 
 allowed_users = []
 processes = []
