@@ -19,7 +19,7 @@ allowed_group_id = -1002042041196
 
 allowed_users = []
 processes = []
-ADMIN_ID = 6670870530
+ADMIN_ID = 5047988352
 connection = sqlite3.connect('user_data.db')
 cursor = connection.cursor()
 
