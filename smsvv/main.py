@@ -12,7 +12,7 @@ import hashlib
 import requests
 import datetime
 
-bot_token = '6510317016:AAHjyf0aHeR2qN0CzujTZI4NxKX8Fdc50dw' 
+bot_token = '6624218714:AAETKqRPxrtOTeq2JZalgEMiOamdXVjeENk' 
 bot = telebot.TeleBot(bot_token)
 
 allowed_group_id = -1001988961300
